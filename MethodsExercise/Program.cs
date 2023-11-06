@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.ComponentModel;
+using System.Runtime.InteropServices;
 
 namespace MethodsExercise
 {
@@ -35,7 +36,38 @@ namespace MethodsExercise
             $"It has {Legs} legs, its body is covered with {Fur} color {Body} and it is a {Eats}. Good thing " +
             $"it's not a carnivore or {Name} may not have made it out to tell us about this interesting new " +
             $"discovery!");
+
+            
         }
+
+        public static int Add(int num1, int num2)
+        {
+            int sum = num1 + num2;
+            return sum;
+        }
+
+        public static int Subtract(int num1, int num2)
+        { 
+            return num1 - num2; 
+        }
+
+        public static double Multiply(double num1, double num2)
+        {
+            return num1 * num2;
+
+        }
+
+        public static int Divide(int num1, int num2)
+        {
+           return num1 / num2; 
+        }
+
+        int Order = Add(25 , 25);
+        int Return = Subtract(55 , 20);
+        double Tax = Multiply(45 , .06);
+        int Portion = Divide(100, 4);
+
+
     }   
                
 }
